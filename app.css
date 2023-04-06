@@ -16,41 +16,61 @@ h3{
     margin-top: 0;
 }
 
-
-
-.container{
-
-
-}
-
-
-
-
-
-
-
-
 .container div{
     background: #718096;
     border: 1px solid silver;
     padding: 1.6rem;
-}
-
-.items-1{
-    
-}
-
-
-.items-2{
+    /* width: 20%; */
+    /* OR */
+    /* flex-basis: 20%; */
+    /* margin-right: 30px; */
 
 }
 
 
-.items-3{
+.container{
+    display: flex;
+    /* align-items: flex-strech; //by default they are stret */
+     /* align-items:flex-start; */
+     /* align-items:flex-end; */
+     height: 500px;
+     /* flex-direction: column; */
+     /* flex-direction: column-reverse; */
+     /* flex-direction: row; */
+     /* flex-direction: row-reverse; */
+     /* justify-content: space-between; */
+     /* justify-content: space-around ; */
+     /* justify-content: space-evenly; */
+     /* justify-content: flex-start; */
+     /* justify-content: flex-end; */
+     /* justify-content: center; */
+     /* margin-right: -30px; */
 
 }
 
 
+.item-1{
+    /* order: 2; */
+    /* flex: 1; */
+}
+
+
+.item-2{
+    /* order: 3; */
+    /* flex: 1; */
+}
+
+
+.item-3{
+    /* order: 1; */
+    /* flex: 1; */
+}
+
+@media (max-width : 640px){
+    .container{
+        flex-direction: column;
+    }
+}
 
 
 
